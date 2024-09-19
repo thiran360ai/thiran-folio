@@ -49,7 +49,7 @@ const Cwithus = () => {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           cursor: pointer;
           transition: transform 0.2s ease-in-out;
-          z-index: 100; /* Ensure the button is below the modal */
+          z-index: 100; /* Ensure the button is above the modal */
         }
 
         .chat-button:hover {
@@ -116,6 +116,13 @@ const Cwithus = () => {
             max-height: none;
           }
         }
+
+        /* Additional Styles for Input Container */
+        .input-container {
+          height: auto; /* Ensure it doesn't stretch like a textarea */
+          resize: none; /* Prevent resizing */
+        }
+
       `}</style>
     </div>
   );
