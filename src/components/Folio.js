@@ -104,10 +104,10 @@ const Folio = ({ cardRefs }) => {
               <h2>Who is Thiran360AI</h2>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-md-4 d-flex justify-content-center align-items-center">
+                  <div className="col-md-4 d-flex justify-content-center align-items-center img-thumbnail">
                     <figure>
                       <img
-                        src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg"
+                        src="thiran.avif"
                         alt="Thiran Solution"
                         className="img-fluid"
                       />
@@ -161,7 +161,7 @@ const Folio = ({ cardRefs }) => {
                   <div className="col-md-4 d-flex justify-content-center align-items-center">
                     <figure>
                       <img
-                        src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg"
+                        src="T360AI LOGO Style.png"
                         alt="Why Thiran"
                         className="img-fluid"
                       />
@@ -203,7 +203,7 @@ const Folio = ({ cardRefs }) => {
                   <div className="col-md-4 d-flex justify-content-center align-items-center">
                     <figure>
                       <img
-                        src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg"
+                        src="man-drawing-bulb-gears_1134-465.avif"
                         alt="Thiran Solution"
                         className="img-fluid"
                       />
