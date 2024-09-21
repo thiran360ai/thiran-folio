@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import banner2 from './banner2.png'; // Adjust the path as necessary
 
 const NewNavbar = ({ cardRefs }) => {
-  const 
-  handleScroll = (ref) => {
+  const handleScroll = (ref) => {
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
@@ -13,14 +13,13 @@ const NewNavbar = ({ cardRefs }) => {
   const navLinkStyle = {
     position: 'relative',
     textDecoration: 'none',
-    color: '#fff', // Text color
+    color: '#fff',
     fontWeight: '600',
     marginRight: '1rem',
     display: 'inline-block',
     transition: 'color 0.3s ease, transform 0.3s ease',
   };
 
-  // Define navLinkAfterStyle for underline effect
   const navLinkAfterStyle = {
     display: 'block',
     position: 'absolute',
@@ -29,7 +28,7 @@ const NewNavbar = ({ cardRefs }) => {
     right: 0,
     width: '0%',
     height: '2px',
-    background: '#fff', // Underline color
+    background: '#fff',
     transition: 'width 0.3s ease, background 0.3s ease',
   };
 
@@ -38,9 +37,9 @@ const NewNavbar = ({ cardRefs }) => {
     const afterElement = link.querySelector('span');
     if (afterElement) {
       afterElement.style.width = '100%';
-      afterElement.style.background = '#fff'; // Underline color on hover
-      link.style.color = '#fff'; // Change text color to white on hover
-      link.style.transform = 'scale(1.05)'; // Slight scale-up on hover
+      afterElement.style.background = '#fff';
+      link.style.color = '#fff';
+      link.style.transform = 'scale(1.05)';
     }
   };
 
@@ -49,9 +48,9 @@ const NewNavbar = ({ cardRefs }) => {
     const afterElement = link.querySelector('span');
     if (afterElement) {
       afterElement.style.width = '0%';
-      afterElement.style.background = '#fff'; // Reset underline color
-      link.style.color = '#fff'; // Reset text color
-      link.style.transform = 'scale(1)'; // Reset scale
+      afterElement.style.background = '#fff';
+      link.style.color = '#fff';
+      link.style.transform = 'scale(1)';
     }
   };
 
@@ -60,21 +59,20 @@ const NewNavbar = ({ cardRefs }) => {
       expand="lg"
       fixed="top"
       style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.2)', // Semi-transparent background
-        backdropFilter: 'blur(10px)', // Frosted glass effect
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow for depth
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         borderRadius: '15px',
         marginTop: '10px',
       }}
     >
       <Container>
-        <Navbar.Brand href="#" style={{ fontSize: '2rem', fontWeight: '700', color: '#fff' }}>
-          Thiran360AI
+        <Navbar.Brand href="#" style={{ display: 'flex', alignItems: 'center', fontSize: '2rem', fontWeight: '700', color: '#fff' }}>
+          <img src={banner2} alt='banner2' style={{ marginRight: '0.5rem', height: '30px', width: '200px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            {/* Use the cardRefs passed to dynamically scroll to each section */}
             <Nav.Link
               style={navLinkStyle}
               onClick={() => handleScroll(cardRefs.card1)}

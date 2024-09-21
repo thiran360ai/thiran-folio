@@ -7,12 +7,12 @@ import Folio from "./components/Folio";
 import NewNavbar from "./components/nav";
 import Cwithus from "./chatwithus";
 import Employee from "./components/Employee"; // Import the new Employee component
-import banner1 from "./banner1.png"; // Import the image
+import banner3 from "./banner3.png"; // Import the image
 
 function App() {
   // Style for the first banner section
   const bannerStyle = {
-    backgroundImage: `url(${banner1})`,
+    backgroundImage: `url(${banner3})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100vh", // Full viewport height
@@ -26,9 +26,9 @@ function App() {
 
   // Style for the rest of the content after the banner
   const contentStyle = {
-    background: `url(${banner1}) no-repeat center center fixed`, // Same banner image in the background of the rest of the page
+    background: `url(${banner3}) no-repeat center center fixed`, // Same banner image in the background of the rest of the page
     backgroundSize: "cover",
-    minHeight: "100vh", // Ensure content fills the screen
+    minHeight: "50vh", // Ensure content fills the screen
     padding: "20px",
   };
 
